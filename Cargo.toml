@@ -1,7 +1,8 @@
 [package]
 name = "offregisters-ctl"
 version = "0.0.1"
-authors = ["Samuel Marks <samuel@offscale.io>"]
+authors = ["Samuel Marks <samuel@offscale.io>", "Swoorup Joshi <swoorupj@gmail.com"]
 edition = "2018"
 
 [dependencies]
+
