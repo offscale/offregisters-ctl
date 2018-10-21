@@ -1,0 +1,19 @@
+---
+name: taiga
+version: 0.0.1-alpha
+depends:
+  - exec: offregister-postgres
+    args:
+      -  --version 9.6.4
+      -  --debug 
+      -  --foo
+    env:
+      RUST: 123
+      bla: asdcasd
+  - exec: offregister-python
+env: 
+    RUST_BACKTRACE: 1
+pipe: 
+    exec: offmetric
+    args: 
+      -  --server influxdb://influx.offscale.io

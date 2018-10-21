@@ -5,4 +5,6 @@ authors = ["Samuel Marks <samuel@offscale.io>", "Swoorup Joshi <swoorupj@gmail.c
 edition = "2018"
 
 [dependencies]
-
+offregisters-lib = { path = "../offregisters-lib" }
+structopt = "0.2"
+serde_yaml = "0.8"
