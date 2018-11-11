@@ -6,12 +6,10 @@ depends:
     args:
       -  hello 
       -  world
-    env:
-      RUST: 123
-  - exec: sleep 
+  - exec: echo 
+    args: 
+      -  1
+pipe:
+    exec: sleep 
     args: 
       - 1
-env: 
-    RUST_BACKTRACE: 1
-pipe: 
-    exec: cat
